@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9499D701CE7247200888505 /* FaceSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9499D6F1CE7247200888505 /* FaceSwift.swift */; };
 		E9A397181CE6F9DC00FC02B4 /* FaceSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A397171CE6F9DC00FC02B4 /* FaceSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9499D6F1CE7247200888505 /* FaceSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceSwift.swift; sourceTree = "<group>"; };
 		E9A397141CE6F9DC00FC02B4 /* FaceSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FaceSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A397171CE6F9DC00FC02B4 /* FaceSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceSwift.h; sourceTree = "<group>"; };
 		E9A397191CE6F9DC00FC02B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				E9A397171CE6F9DC00FC02B4 /* FaceSwift.h */,
 				E9A397191CE6F9DC00FC02B4 /* Info.plist */,
+				E9499D6F1CE7247200888505 /* FaceSwift.swift */,
 			);
 			path = FaceSwift;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9499D701CE7247200888505 /* FaceSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +234,7 @@
 		E9A3971D1CE6F9DC00FC02B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +245,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ken0nek.FaceSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		E9A3971E1CE6F9DC00FC02B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -278,6 +285,7 @@
 				E9A3971E1CE6F9DC00FC02B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
